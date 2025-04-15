@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clarity in Healthcare</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/pdfjs-dist@2.10.377/build/pdf.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🩺 Clarity in Healthcare</h1>
+    <p>Understand Your Medical Report — Instantly</p>
+  </header>
+
+  <main>
+    <section class="input-area">
+      <label for="pdfUpload" class="upload-label">📄 Upload your medical report (PDF)</label>
+      <input type="file" id="pdfUpload" accept="application/pdf" />
+      <p id="fileNamePreview" class="hidden"></p>
+
+      <button id="explainBtn">Explain Report</button>
+    </section>
+
+    <section id="outputSection" class="hidden">
+      <h2>🧠 Easy Explanation</h2>
+      <div id="outputBox"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Clarity in Healthcare • All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
